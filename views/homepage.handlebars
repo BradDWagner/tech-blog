@@ -1,0 +1,20 @@
+{{!-- which includes existing blog posts if any have been posted that include the post title and the date created;
+navigation links for the homepage and the dashboard; and the option to log in --}}
+
+<div class="container">
+    {{#each posts as |post| }}
+    <div class="card post">
+        <div class="title">
+            <h2>
+                <a href="/post/{{post.id}}">{{post.title}}</a>
+            </h2>
+            <h4>Posted by {{post.user.name}} on {{post.date_created}}</h4>
+        </div>
+        <div class="content">
+            <p>
+                {{post.content}}
+            </p>
+        </div>
+    </div>
+    {{/each}}
+</div>

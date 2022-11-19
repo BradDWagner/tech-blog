@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Blog title 1",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur possimus debitis, inventore sed repellat odit natus aliquam magni culpa facere ipsum totam cumque, veritatis molestiae id deleniti? Ratione, a autem.",
+        "date_created": "September 23, 2021 08:30:00",
+        "user_id": 2
+    },
+    {
+        "title": "Blog title 2 electric boogaloo",
+        "content": "Ab veniam natus earum vitae, praesentium facere doloremque quis voluptatibus placeat est iusto, voluptas quae ipsum mollitia eos adipisci, in iure consequatur odio dicta nisi. Eius veniam illo maxime nam.",
+        "date_created": "December 21, 2021 20:30:00",
+        "user_id": 3
+    },
+    {
+        "title": "2 Blog, 2 furious",
+        "content": "Ipsa, deleniti maxime? Amet fugiat inventore sint odit ad perferendis qui molestias quo vero dicta. Optio ea ad dolore perspiciatis, repudiandae saepe delectus, eveniet est numquam unde veniam reprehenderit deserunt!",
+        "date_created": "December 22, 2020 11:00:00",
+        "user_id": 1
+    }
+]

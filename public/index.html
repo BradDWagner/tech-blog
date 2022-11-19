@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fund My Project!</title>
+  <link rel="stylesheet" href="css/jass.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/dahsboard">Dashboard</a>
+            <!-- {{#if logged_in}} -->
+            <button class ="no-button" id="logout">Logout</button>
+            <!-- {{else}} -->
+            <a href="/login">Login</a>
+        </nav>
+        <h1>The Tech Blog</h1>
+    </header>
+    <main>
+        <!-- {{{body}}} -->
+        <div class="container">
+            <div class="card post">
+                <div class="title">
+                    <h2>Post Title</h2>
+                    <h4>Posted by User.name on Post.date_created</h4>
+                </div>
+                <div class="content">
+                    <p>Post.content  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur possimus debitis, inventore sed repellat odit natus aliquam magni culpa facere ipsum totam cumque, veritatis molestiae id deleniti? Ratione, a autem.
+                    Ipsa, deleniti maxime? Amet fugiat inventore sint odit ad perferendis qui molestias quo vero dicta. Optio ea ad dolore perspiciatis, repudiandae saepe delectus, eveniet est numquam unde veniam reprehenderit deserunt!
+                    Ab veniam natus earum vitae, praesentium facere doloremque quis voluptatibus placeat est iusto, voluptas quae ipsum mollitia eos adipisci, in iure consequatur odio dicta nisi. Eius veniam illo maxime nam.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+
+    <!-- {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}} -->
+</body>
