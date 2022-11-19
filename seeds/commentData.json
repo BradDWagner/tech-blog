@@ -1,0 +1,27 @@
+[
+    {
+        "content": "HEY i reallly like thissss",
+        "user_id": 2,
+        "post_id": 2
+    },
+    {
+        "content": "HEY i reallly like thissss",
+        "user_id": 2,
+        "post_id": 1
+    },
+    {
+        "content": "HEY i reallly like thissss",
+        "user_id": 2,
+        "post_id": 3
+    },
+    {
+        "content": "HEY i reallly hate thissss",
+        "user_id": 1,
+        "post_id": 2
+    },
+    {
+        "content": "HEY i dont like thissss",
+        "user_id": 3,
+        "post_id": 3
+    }
+]
