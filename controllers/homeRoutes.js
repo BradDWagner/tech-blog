@@ -22,10 +22,10 @@ router.get('/', async (req, res) =>{
     } catch (err) {
         res.status(500).json(err);
     }
-});//TODO: add withAuth
-router.get('/post/:id', async (req, res) => {
+});
+
+router.get('/post/:id', withAuth, async (req, res) => {
     try {
-        console.log('reached endpoint')
         const postData = await Post.findByPk(req.params.id,{
             include: [
                 {
@@ -34,7 +34,6 @@ router.get('/post/:id', async (req, res) => {
                 }, 
             ],
         });
-
 
         const commentData = await Comment.findAll({
             where: {
@@ -47,14 +46,9 @@ router.get('/post/:id', async (req, res) => {
                 }, 
             ],
         });
-
-        // console.log(commentData)
     
         const post = postData.get({ plain: true});
         const comments = commentData.map((comment) => comment.get({ plain: true }));
-        console.log(post)
-        console.log(comments)
-
     
         res.render('post', {
             post,
@@ -66,5 +60,14 @@ router.get('/post/:id', async (req, res) => {
     }
 
 })
+
+router.get('/login', (req, res) => {
+    if (req.session.logged_in) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('login');
+});
 
 module.exports = router;

@@ -36,6 +36,22 @@ THEN I see navigation links for the homepage, the dashboard, and the option to l
     </footer>
 
     {{#if logged_in}}
-    <script src="/js/logout.js"></script>
+    <script >
+        const logout = async () => {
+  const response = await fetch('/api/user/logout', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  if (response.ok) {
+    document.location.replace('/');
+  } else {
+    alert(response.statusText);
+  }
+};
+
+document.querySelector('#logout').addEventListener('click', logout);
+
+    </script>
     {{/if}}
 </body>
