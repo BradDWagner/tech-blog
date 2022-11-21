@@ -5,3 +5,13 @@ WHEN I click on the button to create a new blog post
 THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
 WHEN I click on one of my existing posts in the dashboard
 THEN I am able to delete or update my post and taken back to an updated dashboard --}}
+<div class="container">
+    {{#if posts}}
+        {{#each posts as |post|}}
+        {{> dash-posts}}
+        {{/each}}
+    {{/if}}
+</div>
+<a href="/new">+ post</a>
+<button href="/new">+ post</button>
+
