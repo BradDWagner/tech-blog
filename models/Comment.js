@@ -1,12 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-//comment
-    //id
-    //date created
-    //user name (foreign key to user)
-    //blog post (foreign key to blogpost)
-
 class Comment extends Model{};
 
 Comment.init(

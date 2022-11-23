@@ -1,8 +1,3 @@
-{{!-- THEN I am presented with the post title, contents, post creator’s username, and date created for that post and
-have the option to leave a comment
-WHEN I enter a comment and click on the submit button while signed in
-THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date
-created --}}
 <div class="container">
     <div class="card post">
         <div class="title">
@@ -27,31 +22,4 @@ created --}}
     </form>
 </div>
 
-<script>
-    const newCommentHandler = async (event) => {
-    event.preventDefault();
-
-    const content = document.querySelector('#comment').value.trim();
-    const post_id = window.location.href.toString().split('/post/')[1];
-
-    if(content && post_id) {
-        const response = await fetch('/api/comment', {
-            method: 'POST',
-            body: JSON.stringify({ content, post_id }),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
-
-        if (response.ok) {
-            document.location.reload()
-        } else {
-            alert('Failed to create project');
-          }
-    }
-}
-
-document
-    .querySelector('.new-comment-group')
-    .addEventListener('submit', newCommentHandler);
-</script>
+<script src="/js/comment.js"></script>

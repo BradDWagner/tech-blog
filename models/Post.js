@@ -41,10 +41,3 @@ Post.init(
 );
 
 module.exports = Post;
-
-//blog posts
-    //id
-    //title
-    //date created
-    //contents
-    //user name(foreign key to user)
