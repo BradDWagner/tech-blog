@@ -3,7 +3,7 @@
 
   ## Description
   This application delivers a blogging platform, allowing users to signup, sign in, and view, create, and comment posts.
-  The deployed application can be found [here](https://arcane-thicket-46198.herokuapp.com/)
+  The deployed application can be found [here.](https://arcane-thicket-46198.herokuapp.com/), and GitHub repo [here.](https://github.com/BradDWagner/tech-blog)
 
   ## Table of Contents
 
